@@ -1,0 +1,49 @@
+{
+  "name": "be-lenka/fio-php-sdk",
+  "type": "library",
+  "description": "Read JSON file from Fio bank and can send request.",
+  "homepage": "https://github.com/be-lenka/fio-php-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Milan Matějček",
+      "email": "milan.matejcek@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Dev Team Be Lenka",
+      "email": "dev+github@belenka.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php-64bit": ">=7.1",
+    "ext-mbstring": "*",
+    "ext-xmlwriter": "*",
+    "ext-simplexml": "*",
+    "guzzlehttp/guzzle": "^6.0 | ^7.0",
+    "nette/safe-stream": "^2.4",
+    "nette/utils": "^2.0 | ^3.0"
+  },
+  "require-dev": {
+    "salamium/testinium": "^0.1",
+    "phpstan/phpstan": "^0.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Belenka\\Fio\\": [
+        "src/"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Belenka\\Fio\\": [
+        "tests/src/"
+      ],
+      "Belenka\\Fio\\Test\\": [
+        "tests/data/"
+      ]
+    }
+  }
+}
